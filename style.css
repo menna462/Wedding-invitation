@@ -1,0 +1,361 @@
+
+.all-section .section-one {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/im1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* لإخفاء أي محتوى زائد */
+}
+
+.section-five .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  filter: blur(210px);
+  z-index: 1;
+  -webkit-filter: blur(210px);
+}
+
+.all-section .section-one .content {
+  position: relative;
+  z-index: 2; 
+  color: white; 
+  text-align: center; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-section .section-one .content .img-1 img{
+  width: 70%;
+  margin-top: 50px;
+}
+.all-section .section-one .content .p-one{
+  font-family: "Amiri", serif;
+  font-size: 23px;  
+  color: rgb(137 121 87);
+  margin-top: 30px;
+}
+.all-section .section-one .content .p-tow{
+  font-family: "Playwrite DE VA Guides", serif;
+  font-size: 66px;
+  color: rgb(83,98,58);
+  margin-top: 68px;
+}
+.all-section .section-one .content .p-three{
+  font-family: "Amiri", serif;
+  color: rgb(137 121 87);
+  font-family: "Changa", sans-serif;
+  font-size: 21px;
+  margin-top: 40px;
+}
+.all-section .section-one .content .p-four{
+  font-family: "Amiri", serif;
+  color: black;
+  font-size: 24px;
+  font-weight: 300;
+}
+.all-section .section-one .content .p-five{
+  font-family: "Amiri", serif;
+  color: black;
+  font-size: 24px;
+    font-weight: 300;
+}
+.all-section .section-one .content hr {
+  border: none;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  height: 2px;
+  background-color: rgb(221, 214, 188); /* لون الخط */
+  width: 20%;
+}
+.section-tow {
+  margin-top: 121px;
+  margin-bottom: 121px;
+}
+
+ .section-tow .right-sectiontow .p-one{
+  font-size: 40px;
+  font-weight: 400;
+}
+ .section-tow .right-sectiontow h4 {
+    margin-top: 50px;
+}
+.left-sectiontow {
+  width: 100%;
+}
+.flower-image {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 40%;
+  height: auto;
+  z-index: 1;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.flower-image-right {
+  position: absolute;
+  right: 0px;
+  width: 82px;
+  bottom: 333px;
+  height: auto;
+  z-index: 1;
+  transform: rotate(333deg);
+}
+
+.map-button-container {
+  text-align: center; 
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-button {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border: 2px solid black; 
+  border-radius: 15px; 
+  background: transparent; 
+  color: black; 
+  font-size: 20px; 
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+}
+
+.map-button i {
+  margin-right: 10px;
+}
+.map-button .i-tow{
+  background: black;
+  color: #fff;
+  padding: 6px;
+  margin-left: 15px;
+  border-radius:50%;
+
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+.map-button:hover {
+  background: black;
+  color: white;
+}
+.map-button a{
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+/* ============================================= */
+/* الشكل الأساسي للـ section */
+.section-three .left-wright{
+  text-align: right;
+  margin-right: 20px;
+  flex: 1;
+}
+.section-three .left-wright .p-1{
+  font-weight: 400;
+  font-size: 53px;
+}
+.section-three .left-wright .p-2{
+  font-size: 20px;
+}
+.section-three .left-wright .countdown{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  /* flex-wrap: wrap; */
+}
+.section-three .left-wright .countdown span{
+  font-size: 50px;
+
+}
+.img-flower2{
+  transform: rotate(349deg);
+  width: 100%;
+}
+
+.time-box span{
+  font-size: 50px;
+}
+/* التصغير على الشاشات الصغيرة */
+ @media (max-width: 576px) {
+.section-tow .left-sectiontow{
+  width: 90%;
+  align-items: center;
+}
+  .img-flower2 {
+    width: 0%
+  }
+  .section-three .left-wright .countdown {
+    justify-content: center;  
+    font-weight: 400;
+    font-size: 16px;  
+  }
+ }
+
+
+.section-four .row{
+  display: flex;
+  justify-content: center;
+}
+
+.section-four {
+  background-color: #f8f9fa;
+  padding: 40px 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.input-section {
+  text-align: center; 
+  margin: 0 auto;
+  max-width: 600px; 
+}
+
+.input-section h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#messageForm {
+  text-align: right; /* جعل النصوص تبدأ من اليمين */
+  direction: rtl;
+}
+
+#messageForm .form-label {
+  font-size: 24px;
+  font-weight: 600 ;
+  color: #555;
+}
+
+#messageForm .form-control {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل جميل */
+  width: 100%; /* ملء العرض */
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px; 
+  border: 1px solid #ddd; 
+}
+
+#messageForm .form-control:focus {
+  outline: none;
+  border-color: #007bff; 
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.25); 
+}
+
+textarea.form-control {
+  height: 120px; 
+}
+
+#signatureContainer {
+  position: relative;
+  height: 150px;
+  background-color: #fff;
+  border: 2px dashed #ccc; /* خطوط صغيرة متقطعة حول المربع */
+  border-radius: 5px;
+  padding: 10px;
+}
+#signatureContainer::before {
+  content: '';
+  position: absolute;
+  bottom: 30px; /* موقع الخط السفلي الداخلي */
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: #ccc; 
+}
+#signatureContainer::after {
+  content: 'التوقيع';
+  position: absolute;
+  bottom: 10px; /* موقع النص تحت الخط */
+  left: 50%;
+  transform: translateX(-50%); /* محاذاة النص في المنتصف */
+  font-size: 14px;
+  color: #666; /* لون النص */
+  font-weight: bold;
+}
+#clearSignature {
+  display: block;
+  margin: 10px auto 0;
+  
+}
+
+.lets-go {
+  background-color: black; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #6c757d; 
+  border: none;
+  padding: 5px 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #565e64; 
+}
+
+.section-five{
+  position: relative;
+  height: 100%;
+  background-image: url('./img/im1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* text-align: right;  */
+}
+.section-five::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(173 160 160 / 62%);
+  z-index: 1;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh; 
+  text-align: center; 
+  z-index: 2;
+  position: relative;
+}
+.p-footer1{
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(87, 85, 85);
+}
+.p-footer2{
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(87, 85, 85);
+}
